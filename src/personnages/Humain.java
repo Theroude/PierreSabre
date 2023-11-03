@@ -5,6 +5,13 @@ public class Humain {
 	private String boissonFav;
 	private int argent;
 
+	public Humain(String nom, String boissonFav, int argent) {
+		super();
+		this.nom = nom;
+		this.boissonFav = boissonFav;
+		this.argent = argent;
+	}
+
 	public String getNom() {
 		return nom;
 	}
@@ -17,7 +24,7 @@ public class Humain {
 		System.out.println(texte);
 	}
 
-	public void direBonjour() {
+	public void direBonjour() {             
 		parler("Bonjour ! Je m’appelle " + nom + " et j’aime boire du " + boissonFav);
 	}
 
@@ -32,6 +39,14 @@ public class Humain {
 			parler("Je n'ai plus que " + argent + " sous en poche. Je ne peux même pas m'offrir " + bien + " à" + prix
 					+ " sous");
 		}
+	}
+	
+	public void gagnerArgent(int gain) {
+		argent += gain;
+	}
+	
+	public void perdreArgent(int perte) {
+		argent += perte;
 	}
 
 }
