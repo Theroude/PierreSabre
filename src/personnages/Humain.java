@@ -46,7 +46,7 @@ public class Humain {
 	}
 	
 	public void perdreArgent(int perte) {
-		argent += perte;
+		argent -= perte;
 	}
 
 }
