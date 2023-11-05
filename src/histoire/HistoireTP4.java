@@ -3,7 +3,7 @@ package histoire;
 import personnages.*;
 
 public class HistoireTP4 {
-	
+
 	public static void main(String[] args) {
 		Commercant marco = new Commercant("Marco", 50);
 		marco.direBonjour();
@@ -18,6 +18,13 @@ public class HistoireTP4 {
 		Ronin roro = new Ronin("Roro", "shochu", 60);
 		roro.direBonjour();
 		roro.donner(marco);
+		System.out.println();
+		leNoir.setClan("Warsong");
+		roro.provoquer(leNoir);
+		System.out.println();
+		leNoir.setReputation(6);
+		roro.provoquer(leNoir);
+		leNoir.setReputation(0);
 	}
 
 }

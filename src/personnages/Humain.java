@@ -21,10 +21,10 @@ public class Humain {
 	}
 
 	public void parler(String texte) {
-		System.out.println(texte);
+		System.out.println("(" + getNom() + ") - " + texte);
 	}
 
-	public void direBonjour() {             
+	public void direBonjour() {
 		parler("Bonjour ! Je m’appelle " + nom + " et j’aime boire du " + boissonFav);
 	}
 
@@ -40,11 +40,11 @@ public class Humain {
 					+ " sous");
 		}
 	}
-	
+
 	public void gagnerArgent(int gain) {
 		argent += gain;
 	}
-	
+
 	public void perdreArgent(int perte) {
 		argent -= perte;
 	}
